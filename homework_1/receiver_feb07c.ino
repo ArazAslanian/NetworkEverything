@@ -3,8 +3,8 @@
   WiFi UDP Recv Byte to LED
   Based on UDP Send and Receive String
 
-  created 3 February 2019
-  by Michael Shiloh
+  created 7 February 2019
+  by Araz Aslanian
 
 */
 
