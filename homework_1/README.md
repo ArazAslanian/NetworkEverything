@@ -1,6 +1,7 @@
 There is an arduino_secrets.h file that has the following:
 
 #define SECRET_SSID ""
+
 #define SECRET_PASS ""
 
 
