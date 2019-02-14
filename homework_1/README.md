@@ -1,5 +1,7 @@
-Hello,
+There is an arduino_secrets.h file that has the following:
 
-This is my readme file
+#define SECRET_SSID ""
+#define SECRET_PASS ""
 
-goodbye
+
+I was the receiver, my partner was Manas; he was the transmitter. Here's (https://github.com/manaspant/Network_Everything/tree/master/HW_1) the link to his code.
