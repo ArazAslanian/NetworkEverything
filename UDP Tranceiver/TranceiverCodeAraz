@@ -3,8 +3,8 @@
   WiFi UDP Send Byte on Button Press
   Based on UDP Send and Receive String
 
-  created 3 February 2019
-  by Michael Shiloh
+  created 18 February 2019
+  by Araz Aslanian and Manas Pant
 */
 
 #include <SPI.h>
