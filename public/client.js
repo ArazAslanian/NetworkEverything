@@ -46,19 +46,3 @@ function draw() {
   }
 }
 
-
-// let img;
-// let offset = 0;
-// let easing = 0.05;
-
-// function setup() {
-//   createCanvas(720, 400);
-//   img = loadImage('.jpg'); // Load an image into the program
-// }
-
-// function draw() {
-//   image(img, 0, 0); // Display at full opacity
-//   fill(0,0,0);
-//   console.log(mouseX);
-
-// }
