@@ -46,3 +46,5 @@ function draw() {
   }
 }
 
+//use d3.js to make a pie chart of time taken by each side at the end of the argument
+
