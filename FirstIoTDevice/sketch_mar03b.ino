@@ -69,5 +69,10 @@ void loop()
 
   // pause for 1 second
   delay(1000);
+  
+ 
+  // when blue button is pressed, start timer 1 and pause timer 2
+ //when yellow button is pressed, start timer 2 and pause timer 1
+ //when the off button is pressed, send time values to the server
 
 }
