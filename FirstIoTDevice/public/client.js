@@ -11,7 +11,7 @@ socket.on('event', (data) => {
 });
 
 socket.on('buttonPressed', (data) => {
-	console.log('received button pressed event from webserver: ' + data);
+	console.log('received loud noise alert ' + data);
 	// document.body.style.backgroundColor = "red";
 	messageonScreen = 'You are being too loud, please calm down!!';
 	counter++;
@@ -20,7 +20,7 @@ socket.on('buttonPressed', (data) => {
 });
 
 socket.on('buttonReleased', (data) => {
-	console.log('received button released from webserver: ' + data);
+	console.log('received alert that it is not loud anymore ' + data);
 	// document.body.style.backgroundColor = "blue";
 	if (counter == 0) {
 		messageonScreen = 'There is no black-and-white situation.';
