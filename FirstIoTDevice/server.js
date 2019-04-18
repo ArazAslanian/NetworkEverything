@@ -1,4 +1,22 @@
-
+/*
+	UDP And HTTP Server
+	Context: node.js
+	Serve a web page to a browser with a control panel
+	Read control panel and send results to Arduino 
+	Web server provided by modules "http" and "express"
+	Communication with Arduino is via a UDP socket
+	provided by module "dgram"
+	Communication with the web client (web browser) 
+	is via a UDP socket provided by webSockets.
+	Websockets creates a socket on top of the HTTP protocol
+	The webSockets module is "socket.io"
+	created 7 March 2019
+	by Michael Shiloh
+	Change log:
+	14 Mar 2019 - ms - better comments and cleaned up code
+										 send bytes instead of buffers to Arduino
+										 receive button events from Arduino and send to web page
+*/
 
 /* UDP server talks to Arduino */
 var dgram = require('dgram');
@@ -33,12 +51,12 @@ function ArduinoUDPServerReceivedMessage(message, sender) {
 	if (message.readUInt8(0) == 8) {
 		console.log( "received an 8");
 		// Now send a message to the web browser to change color
-		webSocket.emit('buttonReleased', 99);
+		webSocket.emit('it is loud', 99);
 	}
 
 	if (message.readUInt8(0) == 1 ) {
 		console.log( "received a 1");
-		webSocket.emit('buttonPressed', 19);
+		webSocket.emit('it is not loud, 19);
 	}
 }
 
